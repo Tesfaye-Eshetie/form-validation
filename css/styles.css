@@ -102,16 +102,21 @@ body {
 
 .input-group {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
+  font-size: .9rem;
 }
 .input-group label {
   margin: 0 1.6rem 0 .5rem;
 }
-#input-gender {
+#input-radio h4 {
+  margin-left: -2.5rem;
+}
+#input-radio {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
+  width: 100%;
 }
 .input-control #username,
 .input-control #email,
@@ -141,11 +146,19 @@ body {
   width: 2rem;
   margin-right: .5rem;
  }
+ #input-select {
+  margin: 1rem auto;
+ }
+ #framework {
+  padding: .1rem .2rem;
+  margin-left: .4rem;
+ }
+
 @media (max-width: 40rem) {
   #form {
     width: 26rem;
   }
-  #input-gender {
+  #input-radio {
     flex-direction: column;
   }
   .input-check{
