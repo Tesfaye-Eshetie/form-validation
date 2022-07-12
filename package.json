@@ -1,7 +1,7 @@
 {
   "name": "picsum-photos-api",
   "version": "1.0.0",
-  "description": "Build a web page that, on load, uses the picsum.photos list API to get 100 images",
+  "description": "form validation demo",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

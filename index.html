@@ -44,14 +44,14 @@
             <input type="radio" id="male" name="gender" value="male" />
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">CSS</label>
+            <label for="female">Female</label>
             <input type="radio" id="none" name="gender" value="none" checked />
-            <label for="javascript">none</label>
+            <label for="none">none</label>
           </div>
         </div>
       </div>
       <div class="input-control">
-        <h4>Comment on your faverite JavaScript framework/library.</h4>
+        <h4>Comment on your faverite JavaScript framework.</h4>
         <textarea
           id="comment"
           cols="50"
@@ -62,10 +62,13 @@
       </div>
       <div class="input-control">
         <div class="input-check">
-         <input type="checkbox" id="input-checkbox" required name="terms" value= false /><p>I have read and accept
-          <a href="#">SOMETHING Terms and Conditions</a></p> 
+          <input type="checkbox" id="input-checkbox" name="terms" />
+          <p>
+            I have read and accept
+            <a href="#">SOMETHING Terms and Conditions</a>
+          </p>
+          <div class="error"></div>
         </div>
-        <div class="error"></div>
       </div>
       <button type="submit">Submit Your Input</button>
     </form>

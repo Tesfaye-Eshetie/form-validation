@@ -32,7 +32,6 @@ const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
   const commentsValue = comments.value.trim();
-  const checkboxValue = checkbox.value;
 
   if (usernameValue === '') {
     setError(username, 'Username is required');
@@ -58,8 +57,8 @@ const validateInputs = () => {
     setSuccess(comments);
   }
 
-  if (checkboxValue === false) {
-    setError(checkbox, 'checking is required');
+  if (!checkbox.checked) {
+    setError(checkbox, "Can't proceed as you didn't agree to the terms!");
   } else {
     setSuccess(checkbox);
   }
